@@ -1,0 +1,72 @@
+/* Container styling */
+div {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Update button */
+button:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+/* Go To Home button */
+button[routerLink] {
+    background-color: #2196F3;
+    color: white;
+}
+
+button[routerLink]:hover {
+    background-color: #0b7dda;
+}
