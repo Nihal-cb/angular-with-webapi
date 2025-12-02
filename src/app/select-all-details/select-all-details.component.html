@@ -1,0 +1,35 @@
+<h1>Details</h1>
+<button routerLink="/ins">insert details</button>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name:</th>
+                <th>Age:</th>
+                <th>Mark:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of getdata">
+                <td>{{p.Name}}</td>
+                <td>{{p.Age}}</td>
+                <td>{{p.Mark}}</td>
+                <td>
+                    <button class="delete" title="delete student"(click)="delete(p.id)">Delete</button>
+                    <!-- <a class="delete" title="delete student" [routerLink]="['/delete',p.id]">Delete</a> -->
+                    <!-- <a (click)="delete(p.id)">Delete</a> -->
+                     <!-- <a class="delete" (click)="delete(p.id)">Delete</a> -->
+
+                </td>
+                <td>
+                   <a [routerLink]="['/selectdetails', p.id]">Details</a>
+
+                    <!-- <button routerLink="['selectdetails',p.id]">Details</button> -->
+                </td>
+                <td>
+                    <a [routerLink]="['/editdetails', p.id]">Edit</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+<h1>Student Details</h1>
+<div>
+    <div>
+        <label>Name:
+            <input type="text"[(ngModel)]="studentdata.Name" placeholder="Name" id="uname" name="uname" required #uname="ngModel"/>
+            <span NgIf="uname.invalid" class="text-danger">*</span>
+        </label>
+        <br>
+        <label>Age:
+            <input type="number"[(ngModel)]="studentdata.Age" placeholder="Age" [min]="18"[max]="50"/>
+        </label>
+        <br>
+        <label>Mark:
+             <input type="number"[(ngModel)]="studentdata.Mark" placeholder="Mark" required />
+        </label>
+        <br>
+        </div>
+        <button (click)="addstudentdata()">Save</button>
+
+    </div>
+
